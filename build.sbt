@@ -10,5 +10,7 @@ libraryDependencies ++= Seq(
   javaJdbc,
   javaEbean,
   cache,
-  javaWs
+  javaWs,
+ "it.innove" % "play2-pdf" % "1.1.3",
+ "de.deltatree.tools" % "qrsct" % "1.1.2"
 )
