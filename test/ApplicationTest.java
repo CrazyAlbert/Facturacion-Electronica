@@ -22,6 +22,10 @@ import static org.fest.assertions.Assertions.*;
 
 /**
 *
+ * @author Julio Alberto Alvarez Navarrete 256962
+ * @author Jesus jose Garcia Pardo 271305
+ * @author Luis Alberto Hernandez Dominguez
+ * @since 25/05/2015
 * Simple (JUnit) tests that can call all parts of a play app.
 * If you are interested in mocking a whole application, see the wiki for more details.
 *
@@ -40,6 +44,7 @@ public class ApplicationTest {
         assertThat(contentType(html)).isEqualTo("text/html");
         assertThat(contentAsString(html)).contains("Your new application is ready.");
     }
+
 
 
 }
