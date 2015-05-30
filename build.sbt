@@ -13,4 +13,5 @@ libraryDependencies ++= Seq(
   javaWs,
  "it.innove" % "play2-pdf" % "1.1.3",
  "de.deltatree.tools" % "qrsct" % "1.1.2"
+ "org.mongodb.morphia" % "morphia" % "1.0.0-rc0"
 )
