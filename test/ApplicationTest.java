@@ -26,7 +26,7 @@ import static org.fest.assertions.Assertions.*;
  * @description Pruebas Unitarias
  * @author Julio Alberto Alvarez Navarrete 256962
  * @author Jesus Jose Garcia Pardo 271305
- * @author Luis Alberto Hernandez Dominguez
+ * @author Luis Alberto Hernandez Dominguez 211507
  * @date 25/05/2015
  *
  */
@@ -44,6 +44,16 @@ public class ApplicationTest {
         Content html = views.html.index.render("Your new application is ready.");
         assertThat(contentType(html)).isEqualTo("text/html");
         assertThat(contentAsString(html)).contains("Your new application is ready.");
+    }
+
+    @Test
+    public void aTest() {
+        assertEquals(2, 1 + 1); // Una cosa que es realmente importante probar
+    }
+
+    @Test
+    public void testUsers() {
+        assertEquals(3, Users.count());
     }
 
 

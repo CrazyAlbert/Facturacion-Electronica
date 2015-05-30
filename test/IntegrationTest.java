@@ -15,7 +15,7 @@ import static org.fluentlenium.core.filter.FilterConstructor.*;
  * @description Pruebas de Aceptacion
  * @author Julio Alberto Alvarez Navarrete 256962
  * @author Jesus Jose Garcia Pardo 271305
- * @author Luis Alberto Hernandez Dominguez
+ * @author Luis Alberto Hernandez Dominguez 211507
  * @date 25/05/2015
  *
  */
@@ -34,12 +34,12 @@ public class IntegrationTest {
     }
 
     @Test
-    public void testTheHomePage() {
+    /*public void testTheHomePage() {
         Response response = //GET("/");
         assertStatus(200, response);
-    }
+    }*/
 
-    }
+
 
 
 }
