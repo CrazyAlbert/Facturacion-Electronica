@@ -3,9 +3,9 @@ package models;
 import java.util.List;
 
 public class Producto {
-	public int id;
-	public String nombre;
+	public int    noIdentificacion;
+	public String unidad;
 	public String descripcion;
-	public float precioUnitario;
+	public float  valorUnitario;
 	public List<Impuesto> impuestos;
 }
