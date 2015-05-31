@@ -4,8 +4,9 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/css.css" media="screen" />
     </head>
-    <body bgcolor="#F6CECE">
+    <body >
         <div></div>
         <img src="imagenes/portada2.png" WIDTH=1350 HEIGHT=150 VSPACE=0 HSPACE="0" ALT="rosar">
         <table border="3" >
@@ -16,7 +17,7 @@
         <br> 
         <table border="1" >
         <tr>
-            <td bgcolor="#F6CEF5" align="center" valign="top" WIDTH=300 HEIGHT=20 ><font face="Lucida Calligraphy" size="2">
+            <td bgcolor="#F6CEF5" align="center" id="tablaintro" valign="top" WIDTH=300 HEIGHT=20 ><font face="Lucida Calligraphy" size="2">
                 Te damos la bienvenida a este proyecto, en esta pagina 
                 encontrarás todo tipo de articulos de vestir, ya sea zapatos, camisas, pantalines, vestidos, etc.
             el proposito de esta pagina es probar el protocolo de compra en linea, con el fin de generar una factura
@@ -26,23 +27,23 @@
             </font>
             <table border="0">
                 <tr>
-                     <td align="left" valign="top" WIDTH=750 HEIGHT=20><font face="Arial" size="2">
+                     <td align="left" valign="top" id="inf_table" WIDTH=750 HEIGHT=20><font face="Arial" size="2">
                          Información General<br><br><br>
                          Empresa:  Los 3 Patitos <br>
                          Telefono: 000-000-00-00<br>
                          E-Mail: asd@laweafome.chorizo<br>
-                         Oficinas: direccion pendeja de relleno
+                         Oficinas: direccion inventada
                          </font></td>
                 </tr>
             </table>
             <table border="1">
                 <tr>
-                     <td align="left" valign="top" WIDTH=750 HEIGHT=380><font face="Arial" size="2">
+                     <td align="left" valign="top" WIDTH=750 HEIGHT=445><font face="Arial" size="2">
 
                          </font></td>
                 </tr>
             </table></td>
-            <td align="left" valign="top" WIDTH=750 HEIGHT=20><font face="Arial" size="2">A continuacion te presentamos algunos catalogos donde podrás verificar
+            <td align="left" valign="top" WIDTH=750 id="prendas" HEIGHT=20><font face="Arial" size="2">A continuacion te presentamos algunos catalogos donde podrás verificar
                 las prendas disponibles...</font><br><br>
                 <table border="1" align="center">
                     <tr>
@@ -71,8 +72,8 @@
         <select name="camisas">    
             <option value="b0" selected="selected" style="width: 100px;"></option>
         <option value="b1">Abalorios</option>
-        <option value="b2">sabra la verga 1</option>
-        <option value="b3">sabra la verga 2</option>
+        <option value="b2">relleno 1</option>
+        <option value="b3">relleno 2</option>
         <option value="b4">asd23</option>
         <option value="b5">asd</option>
         </select><br><br>
@@ -149,14 +150,17 @@
         <input type="submit" value="Agregar a la Lista">
         </td>
                 </tr>
-                </table>
+                </table><br><br>
                 <table border="0">
                     <tr>
-                        <td align="left" WIDTH=300 HEIGHT=20><font face="Arial" size="2">
+                        <td align="left" WIDTH=300 id="cliente" HEIGHT=20 ><font face="Arial" size="2">
                             <B><br>Introduce tus datos de cliente:</B><br></font>
                         </td>
-                        <td align="left" WIDTH=200 HEIGHT=20><font face="Arial" size="2"></font></td>
-                    </tr><tr><td align="left" WIDTH=200 HEIGHT=20><font face="Arial" size="2"></font></td>
+                        
+                        <td align="left" WIDTH=440 HEIGHT=20 id="cliente2"><font face="Arial" size="2"></font></td>
+                    </tr>
+                    
+                    <tr><td align="left" WIDTH=200 HEIGHT=20><font face="Arial" size="2"></font></td>
                     </tr>
                     <tr><td align="Right" WIDTH=200 HEIGHT=20><font face="Arial" size="2">Nombre:</font></td>
                         <td><input type="text" name="rfc" size=35></td>
@@ -167,11 +171,13 @@
                     <tr><td align="Right" WIDTH=200 HEIGHT=20><font face="Arial" size="2">Codigo Postal</font></td>
                         <td><input type="text" name="rfc" size=35></td>
                     </tr>
+                    <tr><td align="Right" WIDTH=200 HEIGHT=20><font face="Arial" size="2"></font></td>
+                    </tr>
                     <tr>
-                        <td align="left" WIDTH=300 HEIGHT=20><font face="Arial" size="2">
+                        <td align="left" WIDTH=300 HEIGHT=20 id="domicilio"><font face="Arial" size="2">
                             <B><br>Introduce los datos de tu domicilio</B><br></font>
                         </td>
-                        <td align="left" WIDTH=200 HEIGHT=20><font face="Arial" size="2"></font></td>
+                        <td align="left" WIDTH=200 HEIGHT=20 id="domicilio2"><font face="Arial" size="2"></font></td>
                     </tr><tr><td align="left" WIDTH=200 HEIGHT=20><font face="Arial" size="2"></font></td>
                     </tr>
                     <tr><td align="Right" WIDTH=200 HEIGHT=20><font face="Arial" size="2">Calle</font></td>
@@ -183,7 +189,10 @@
                     <tr><td align="Right" WIDTH=200 HEIGHT=20><font face="Arial" size="2">Numero Externo</font></td>
                         <td><input type="text" name="rfc" size=35></td>
                     </tr>
-                </table><br> <br>
+                    <tr><td align="Right" WIDTH=200 id="final_space" HEIGHT=20><font face="Arial" size="2"></font></td>
+                        <td align="Right" WIDTH=200 id="final_space2" HEIGHT=20><font face="Arial" size="2"></font></td>
+                    </tr>
+                </table><br>
                 
                 <p align="center"><input type="submit" value="Generar Factura"></p><br>
                 
