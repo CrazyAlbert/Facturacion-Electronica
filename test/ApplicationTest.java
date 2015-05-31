@@ -20,17 +20,14 @@ import static play.test.Helpers.*;
 import static org.fest.assertions.Assertions.*;
 
 
-
 /**
  * @version 1.0
- * @description Pruebas Unitarias
- * @author Julio Alberto Alvarez Navarrete 256962
- * @author Jesus Jose Garcia Pardo 271305
- * @author Luis Alberto Hernandez Dominguez 211507
- * @date 25/05/2015
- *
+ * @apiNote Pruebas Unitarias
+ * @author Julio Alberto Alvarez Navarrete 256962, Jesus Jose Garcia Pardo 271305,Luis Alberto Hernandez Dominguez 211507
+ * @since 25/05/2015
+ * Simple (JUnit) tests that can call all parts of a play app.
+ * If you are interested in mocking a whole application, see the wiki for more details.
  */
-
 public class ApplicationTest {
 
     @Test
@@ -46,16 +43,7 @@ public class ApplicationTest {
         assertThat(contentAsString(html)).contains("Your new application is ready.");
     }
 
-    @Test
-    public void aTest() {
-        assertEquals(2, 1 + 1); // Una cosa que es realmente importante probar
-    }
-
-    @Test
-    public void testUsers() {
-        assertEquals(3, Users.count());
-    }
-
-
 
 }
+
+
