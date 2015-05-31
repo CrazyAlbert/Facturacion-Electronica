@@ -11,6 +11,10 @@ public class Detalle {
 		return cantidad * p.valorUnitario;
 	}
 	
+	public String fImporte(){
+		return String.format("%.2f",importe());
+	}
+
 	public List<Impuesto> impuestos(){
 		return p.impuestos;
 	}

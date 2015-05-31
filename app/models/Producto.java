@@ -6,6 +6,11 @@ public class Producto {
 	public int id;
 	public String nombre;
 	public String descripcion;
-	public float precioUnitario;
+	public String unidad;
+	public float valorUnitario;
 	public List<Impuesto> impuestos;
+
+	public String fValorUnitario(){
+		return String.format("%.2f", valorUnitario);
+	}
 }

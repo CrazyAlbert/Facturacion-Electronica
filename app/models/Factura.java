@@ -54,8 +54,21 @@ public class Factura {
 	
 	/* pendiente */
 
-	public Detalle(){
-		this.detalle = new ArrayList <Detalle> ();
+	public Factura(){
+
+		this.detalle    = new ArrayList <Detalle> ();
+
+		this.eRFC           = "LTR940614NY9";
+		this.eNombre        = "Los Tres Patitos";
+		this.eCalle         = "Av Tecnologico";
+		this.eNumExt        = "3208";
+		this.eColonia       = "Parral";
+		this.eCP            = "31105";
+		this.eMunicipio     = "Chihuahua";
+		this.eEstado        = "Chihuahua";
+		this.ePais          = "Mexico";
+		this.eRegimenFiscal = "Personas moral del régimen general";
+
 	}
 	
 	public float total(){
