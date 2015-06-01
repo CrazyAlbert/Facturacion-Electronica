@@ -15,3 +15,7 @@ libraryDependencies ++= Seq(
  "de.deltatree.tools" % "qrsct" % "1.1.2",
  "org.mongodb.morphia" % "morphia" % "1.0.0-rc0"
 )
+
+val appDependencies = Seq(
+  "postgresql" % "postgresql" % "9.1-1201.jdbc4"
+)
